@@ -81,6 +81,7 @@ struct Group
 	int a;
 	int b;
 };
+struct gg { int c; };
 struct HardwareConfig
 {
     unsigned inDataWidth;
