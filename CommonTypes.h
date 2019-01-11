@@ -78,23 +78,12 @@ constexpr unsigned numGroupStrategy = 2;
 /// output Group
 struct Group
 {
-    std::vector<std::string> layers;  // whithout pool
-    GroupStrategy stg;
-    std::vector<Partition> partitions; // length == layers.length
-    unsigned fctUR;                     // factor of utilization ratio. {1 2 4}
-	int useRate;                       //bic % pi == 0 ->2; bic /pi == 1/2 ->1; bic /pi == 1/4 -> 0?????????????????????????????????????????????????
-
-    Group(std::vector<std::string> ls, GroupStrategy s, std::vector<Partition> ps
-            , unsigned u , int r)
-    : layers(ls), stg(s), partitions(ps), fctUR(u), useRate(r)
-    {
-        assert(ls.size() == ps.size());
-    }
-    friend std::ostream& operator << ( std::ostream & o, Group const & g);
+	int a;
+	int b;
 };
 struct HardwareConfig
 {
-    unsigned inDataWidth;
+    unsigned inDataWidt;
     unsigned outDataWidth;
 
     float inBitWidth;
