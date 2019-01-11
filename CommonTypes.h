@@ -90,8 +90,9 @@ struct Group
     {
         assert(ls.size() == ps.size());
     }
-    friend std::ostream& operator << ( std::ostream & o, Group const & g);
+    
 };
+struct gg { int c; };
 struct HardwareConfig
 {
     unsigned inDataWidth;
