@@ -84,12 +84,7 @@ struct Group
     unsigned fctUR;                     // factor of utilization ratio. {1 2 4}
 	int useRate;                       //bic % pi == 0 ->2; bic /pi == 1/2 ->1; bic /pi == 1/4 -> 0?????????????????????????????????????????????????
 
-    Group(std::vector<std::string> ls, GroupStrategy s, std::vector<Partition> ps
-            , unsigned u , int r)
-    : layers(ls), stg(s), partitions(ps), fctUR(u), useRate(r)
-    {
-        assert(ls.size() == ps.size());
-    }
+    
     
 };
 struct gg { int c; };
