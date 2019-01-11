@@ -83,7 +83,7 @@ struct Group
 };
 struct HardwareConfig
 {
-    unsigned inDataWidt;
+    unsigned inDataWidth;
     unsigned outDataWidth;
 
     float inBitWidth;
